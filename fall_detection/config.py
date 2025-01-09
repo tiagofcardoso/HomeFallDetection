@@ -1,9 +1,13 @@
 import cv2
+import os
+from dotenv import load_dotenv
 
-TWILIO_ACCOUNT_SID = 'YOUR_TWILIO_ACCOUNT_SID'
-TWILIO_AUTH_TOKEN = 'YOUR_TWILIO_AUTH_TOKEN'
-TWILIO_FROM = 'whatsapp: YOUR_TWILIO_PHONE_NUMBER'
-TWILIO_TO = 'whatsapp: RECIPIENT_PHONE_NUMBER'
+load_dotenv()
+
+TWILIO_ACCOUNT_SID = os.getenv('TWILIO_ACCOUNT_SID')
+TWILIO_AUTH_TOKEN = os.getenv('TWILIO_AUTH_TOKEN')
+TWILIO_FROM = os.getenv('TWILIO_FROM')
+TWILIO_TO = os.getenv('TWILIO_TO')
 
 VIDEO_SOURCE = 2  # default to external webcam
 try:

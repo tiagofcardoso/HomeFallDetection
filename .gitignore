@@ -1,3 +1,14 @@
 yolo*
 fall_detection.py
+__pycache__/
+*.py[cod]
+.env
+.venv
+env/
+venv/
+*.mp4
+*.aviTWILIO_ACCOUNT_SID=YOUR_TWILIO_ACCOUNT_SID
+TWILIO_AUTH_TOKEN=YOUR_TWILIO_AUTH_TOKEN
+TWILIO_FROM=whatsapp:YOUR_TWILIO_PHONE_NUMBER
+TWILIO_TO=whatsapp:RECIPIENT_PHONE_NUMBER
 

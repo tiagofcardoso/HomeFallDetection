@@ -6,10 +6,10 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Twilio Configuration with validation
-TWILIO_ACCOUNT_SID = 'AC7d746a6c25ce284435434b65f7de6ea8'
-TWILIO_AUTH_TOKEN = 'eed324e8f0d686157b1aa949b53e720c'
-TWILIO_FROM = 'whatsapp:+14155238886'
-TWILIO_TO = 'whatsapp:+351696683415'
+TWILIO_ACCOUNT_SID = os.getenv('TWILIO_ACCOUNT_SID')
+TWILIO_AUTH_TOKEN = os.getenv('TWILIO_AUTH_TOKEN')
+TWILIO_FROM = os.getenv('TWILIO_FROM')
+TWILIO_TO = os.getenv('TWILIO_TO')
 
 # Validar configurações do Twilio
 if not all([TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN, TWILIO_FROM, TWILIO_TO]):

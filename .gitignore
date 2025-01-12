@@ -1,10 +1,29 @@
-yolo*
-fall_detection.py
-__pycache__/
-*.py[cod]
-.env
-.venv
+# Ambiente virtual
+myvenv/
 env/
 venv/
+
+# Arquivos Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Arquivos de ambiente
+.env
+
+# Arquivos de vídeo
 *.mp4
 *.avi
+
+# Logs e databases
+*.log
+*.sqlite3
+
+# IDEs
+.vscode/
+.idea/
+
+# Outros
+.DS_Store
+
+yolo*

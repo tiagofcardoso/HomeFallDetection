@@ -1,4 +1,6 @@
 opencv-python
 mediapipe
-twilio
 ultralytics
+python-dotenv
+twilio
+numpy>=1.19.0
